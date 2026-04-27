@@ -1,4 +1,4 @@
-package com.abhirup.problems.adapter;
+package com.abhirup.patterns.structural.adapter;
 
 public class RazorPayApi {
     public void makePayment(String orderId, double amount) {

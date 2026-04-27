@@ -1,4 +1,4 @@
-package com.abhirup.problems.adapter;
+package com.abhirup.patterns.structural.adapter;
 
 public class PayuGateway implements PaymentGateway {
     @Override
