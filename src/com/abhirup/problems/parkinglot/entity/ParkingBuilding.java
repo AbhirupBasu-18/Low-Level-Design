@@ -1,20 +1,24 @@
 package com.abhirup.problems.parkinglot.entity;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 public class ParkingBuilding {
-    private UUID buildingId;
-    private String buildingName;
     private List<Floor> floors;
+public ParkingBuilding(){
+    this.floors=new ArrayList<>();
+}
+    public List<Floor> getFloors() {
+        return floors;
+    }
 
-     public ParkingBuilding(UUID buildingId, String buildingName, List<Floor> floors) {
-        this.buildingId = buildingId;
-        this.buildingName = buildingName;
+    public void setFloors(List<Floor> floors) {
         this.floors = floors;
     }
-    //add floor here
-    void addFloor(Floor floor){
-        this.floors.add(floor);
+    public void addFloor(Floor floor){
+        floors.add(floor);
+    }
+    public void removeFloor(Floor floor){
+        floors.remove(floor);
     }
 }

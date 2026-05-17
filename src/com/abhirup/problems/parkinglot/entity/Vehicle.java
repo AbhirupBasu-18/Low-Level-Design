@@ -2,21 +2,20 @@ package com.abhirup.problems.parkinglot.entity;
 
 import com.abhirup.problems.parkinglot.enums.VehicleType;
 
-import java.util.UUID;
 public class Vehicle {
-    private UUID vehicleNumber;
+    private String vehicleNumber;
     private VehicleType vehicleType;
 
-    public Vehicle(UUID vehicleNumber, VehicleType vehicleType) {
+    public Vehicle(String vehicleNumber, VehicleType vehicleType) {
         this.vehicleNumber = vehicleNumber;
         this.vehicleType = vehicleType;
     }
 
-    public UUID getVehicleNumber() {
+    public String getVehicleNumber() {
         return vehicleNumber;
     }
 
-    public void setVehicleNumber(UUID vehicleNumber) {
+    public void setVehicleNumber(String vehicleNumber) {
         this.vehicleNumber = vehicleNumber;
     }
 
